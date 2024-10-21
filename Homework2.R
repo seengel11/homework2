@@ -2,7 +2,7 @@ library(tidyverse)
 library(shiny)
 
 # Loads data relevant for app
-park_species <- read.csv("most_visited_nps_species_data.csv") %>% 
+park_species <- read.csv("https://raw.githubusercontent.com/seengel11/homework2/refs/heads/main/most_visited_nps_species_data.csv") %>% 
   select('ParkName', 'CategoryName', 'SciName', 'CommonNames', 'Nativeness')
 
 ## makes variable lists for relevant Input options
